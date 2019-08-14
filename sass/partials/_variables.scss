@@ -1,0 +1,54 @@
+//@include font-face("Georgia", font-files("Georgia.woff")); => include font face properly, just place it on /fonts folder
+@include font-face("HelveticaRegular", font-files("HelveticaNeue.ttf"));
+@include font-face("HelveticaBold", font-files("helvetica-neue-bold.ttf"));
+@include font-face("HelveticaLight", font-files("HelveticaNeue-Light.otf"));
+@include font-face("HelveticaMedium", font-files("HelveticaNeue-Medium.ttf"));
+@include font-face("MyriadProRegular", font-files("MyriadPro-Regular.otf"));
+
+$red: #ff0000;
+$blue: #213b84;
+$gray: #f5f5f5;
+$darkgray: darken($gray, 40%);
+$black: #000000;
+$gold: #D3B88B;
+$offwhite: #f8f8f8;
+$green: #016531;
+$white: #ffffff;
+$orange: #f58b05;
+
+/* Fonts
+---------------------------------------- */
+$lato: 'Lato', Arial, sans-serif;
+
+/* Susy
+---------------------------------------- */
+
+$susy: (
+        columns: 12,
+        gutters: .25,
+        math: fluid,
+        output: float,
+);
+
+@include breakpoint-set('default feature', 'max-width');
+
+@include border-box-sizing;
+$desk: min-width 1280px;
+$portrait: 1024px 1279px;
+$tabletpor: 768px 1279px;
+$tablet: 768px 1023px;
+$abovemobile: min-width 768px;
+$mobiletabpor: max-width 1279px;
+$mobiletab: max-width 1023px;
+$mobile: max-width 767px;
+$smallmobile: max-width 320px;
+
+
+
+
+
+
+
+
+
+
